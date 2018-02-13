@@ -1,0 +1,188 @@
+.headerContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerTitle {
+    color: #EEEFF7;
+    opacity: 0.8;
+    cursor: default;
+}
+
+.title {
+    color: #EEEFF7;
+    letter-spacing: 14px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    opacity: 0;
+    animation: fadeIn 2s 0.2s ease 1;
+    animation-fill-mode:forwards;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.title:hover {
+    color: #92CDCF;
+    letter-spacing: 18px;
+}
+.subtitle {
+    font-size: 20px !important;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-55px) translateX(15px);
+    transition: all 0.4s ease-in-out;
+    animation: typeIn 1.5s steps(12);
+    overflow: hidden;
+    white-space: nowrap;
+}
+.subtitle:hover {
+    color: #92CDCF;
+}
+@keyframes typeIn {
+    0% { width: 0ch}
+    100% { width: 11ch}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.chevContainer {
+    position: absolute;
+    bottom: 15px;
+    right: 45vw;
+    width: 60px;
+    height: 65px;
+    opacity: 0.7;
+    padding-top: 35px;
+    transition: all 0.4s ease-in-out;
+}
+.chevLeft {
+    width: 42px;
+    height: 10px;
+    background-color: #EEEFF7;
+    transform: rotate(45deg) translateX(9px) translateY(12px);
+    transition: all 0.4s ease-in-out;
+}
+.chevRight {
+    width: 42px;
+    height: 10px;
+    background-color: #EEEFF7;
+    transform: rotate(-45deg) translateX(12px) translateY(18px);
+    transition: all 0.4s ease-in-out;
+}
+.chevContainer:hover * {
+    background-color: #92CDCF;
+    opacity: 1;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .title {
+        color: #EEEFF7;
+        letter-spacing: 14px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 45px;
+    }
+    .subtitle {
+        font-size: 18px !important;
+        letter-spacing: 2px;
+        margin: 0;
+        padding: 0;
+        transform: translateY(-50px) translateX(15px);
+    }
+    .chevContainer {
+        position: fixed;
+        width: 60px;
+        height: 40px;
+        bottom: 25px;
+        right: 40vw;
+    }
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .title {
+        color: #EEEFF7;
+        letter-spacing: 14px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 35px;
+    }
+    .subtitle {
+        font-size: 18px !important;
+        letter-spacing: 2px;
+        margin: 0;
+        padding: 0;
+        transform: translateY(-40px) translateX(15px);
+    }
+    .chevContainer {
+        position: fixed;
+        width: 60px;
+        height: 40px;
+        bottom: 25px;
+        right: 40vw;
+    }
+}
+
+.bounce {
+	-moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+    position: absolute;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-25px);
+    transform: translateY(-25px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-25px);
+    -ms-transform: translateY(-25px);
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}

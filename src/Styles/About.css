@@ -1,0 +1,30 @@
+.about-section {
+    width: 100%;
+    height: 900px;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+    color: #EEEFF7;
+    background-color: #31353D;
+	font-family: 'Roboto Mono', monospace;
+}
+.about-me-container {
+	display: flex;
+    justify-content: center;
+    margin-top: 74px;
+    width: 470px;
+    height: 275px;
+    transition: all 0.4s ease;
+}
+.skills-container {
+    margin-top: 74px;
+    height: 275px;
+    width: 470px;
+    transition: all 0.4s ease;
+}
+.about-me-container:hover {
+	color: #92cdcf;
+}
+.skills-container:hover {
+	color: #92cdcf;
+}

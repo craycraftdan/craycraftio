@@ -1,0 +1,207 @@
+
+.contact-container {
+    height: 100%;
+    color: #EEEFF7;
+    background-color: #31353D;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    vertical-align: middle;
+}
+.header {
+    display: block;
+    width: 100%;
+    margin: 35px;
+    
+}
+.header p {
+    font-size:28px;
+    letter-spacing: 8px;
+    font-family: 'Roboto Mono', monospace;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.contact-container:hover  p{
+  color: #92CDCF;
+  letter-spacing: 12px;
+}
+.item {
+    width: 400px;
+    height: auto;
+    background-color: transparent;
+    align-self: center;
+  }
+.itemButton {
+    width: 75vw;
+    padding: 5px;
+    order: 1;
+    display: block;
+    margin-bottom: 75px;
+}
+  
+  
+  /* INPUT TEXT AREA STYLES */
+  .inputSet {
+    margin-bottom: 25px;
+  }
+  .clean-input {
+    display: block;
+    width: 100%; 
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #EEEFF7;
+    border-bottom: 2px solid #EEEFF7;
+    font-size: 17px;
+    transition: 0.3s ease all; 
+  }
+  .clean-textArea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: 20px;
+    min-height: 135px;
+    max-height: 135px;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    color: #EEEFF7;
+    border-bottom: 2px solid #EEEFF7;
+    border-left: 2px solid #EEEFF7;
+    font-size: 17px;
+    transition: 0.3s ease all; 
+  }
+  .submitButton {
+    letter-spacing: 1px;
+    margin-top: 25px;
+    border: none;
+    outline: none;
+    color: #EEEFF7;
+    background: transparent;
+    border-top: solid 2px transparent;
+    border-right: solid 2px transparent;
+    border-bottom: solid 2px #EEEFF7;
+    border-left: solid  2px #EEEFF7;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-bottom: 2px;
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    transition: 0.5s all; 
+  }
+  .submitButton:hover {
+    color: #92CDCF;
+    border-bottom: solid 2px #92CDCF;
+    border-left: solid  2px #92CDCF;
+  }
+  .submitButton:active {
+    border-top: solid 2px #92CDCF;
+    border-right: solid 2px #92CDCF;
+    background-color: #92CDCF;
+    color: #31353D;
+    transition: all .1s;
+  }
+  .clean-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 100%;
+    height: 10px;
+    background-color: #EEEFF7;
+    opacity: 0.7;
+  }
+  .clean-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 25px;
+      border: 4px solid #92CDCF;
+      background: transparent;
+      cursor: pointer;
+  }
+  .clean-slider:hover {
+      opacity: .9;
+  }
+  .clean-slider-label {
+    color: white;
+    font-size: 16px;
+  }
+  .floatRight {
+    float: right;
+  }
+  /* LABEL STYLES */
+  .clean-label {
+    pointer-events: none;
+    font-size: 16px;
+    color: #EEEFF7;
+    display: block;
+    transform: translateY(-25px);
+    transition: 0.4s ease all; 
+  }
+  .clean-textArea-label {
+    pointer-events: none;
+    z-index: -1;
+    font-size: 16px;
+    color: #EEEFF7;
+    transform: translateY(-162px);
+    display: block;
+    transition: 0.4s ease all; 
+  }
+  
+  /* INPUT FOCUS ANIMATION */
+  .clean-input:focus {
+    color: #92CDCF;
+    border-bottom: 2px solid #92CDCF;
+  }
+  .clean-input:focus + .clean-label {
+    color: #92CDCF;
+    transform: translateY(5px);
+  } 
+  .clean-input:valid + .clean-label {
+    color: #EEEFF7;
+    transform: translateY(5px);
+  }
+  
+  /* TEXT AREA FOCUS ANIMATION */
+  .clean-textArea:focus {
+    color: #92CDCF;
+    border-bottom: 2px solid #92CDCF;
+    border-left: 2px solid #92CDCF;
+  }
+  .clean-textArea:focus + .clean-textArea-label {
+    color: #92CDCF;
+    transform: translateY(5px);
+  }
+  .clean-textArea:valid + .clean-textArea-label {
+    color: #EEEFF7;
+    transform: translateY(5px);
+  }
+  
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .item {
+        width: 85vw;
+        height: auto;
+        background-color: transparent;
+        align-self: center;
+    }
+    .itemButton {
+        width: 85vw;
+        padding: 5px;
+        order: 1;
+        display: block;
+        margin-bottom: 75px;
+    }
+}
