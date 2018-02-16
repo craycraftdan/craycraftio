@@ -1,12 +1,11 @@
 {
   "main.css": "static/css/main.1fc13be4.css",
   "main.css.map": "static/css/main.1fc13be4.css.map",
-  "main.js": "static/js/main.b5b124be.js",
-  "main.js.map": "static/js/main.b5b124be.js.map",
+  "main.js": "static/js/main.713e22dc.js",
+  "main.js.map": "static/js/main.713e22dc.js.map",
   "static\\media\\Browser Window.svg": "static/media/Browser Window.51fc8fc9.svg",
   "static\\media\\Coffee Cup.svg": "static/media/Coffee Cup.26d423ef.svg",
-  "static\\media\\MongoSmallWhite.png": "static/media/MongoSmallWhite.dec16a92.png",
-  "static\\media\\NodeSmallWhite.png": "static/media/NodeSmallWhite.33f81f06.png",
-  "static\\media\\ReactSmallWhite.png": "static/media/ReactSmallWhite.123f7f53.png",
-  "static\\media\\ReduxSmallWhite.png": "static/media/ReduxSmallWhite.77210d69.png"
+  "static\\media\\MongoLogo.png": "static/media/MongoLogo.3851cc04.png",
+  "static\\media\\ReactLogo.png": "static/media/ReactLogo.61a7eeee.png",
+  "static\\media\\ReduxLogo.png": "static/media/ReduxLogo.59c46753.png"
 }
