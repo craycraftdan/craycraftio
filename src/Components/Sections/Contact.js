@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import swal from 'sweetalert2'
-
 import '../../Styles/Contact.css'
-
 
 class Contact extends Component {
     constructor(props) {
@@ -10,6 +8,7 @@ class Contact extends Component {
         this.state = {
             budget: 9500,
             deadline: 6,
+            subject: 'Project Request',
             firstName: '',
             lastName: '',
             emailAddress: '',
@@ -74,6 +73,14 @@ class Contact extends Component {
     }
 
     onSave() {
+        let subject = this.state.subject + ' from ' + this.state.firstName + ' ' + this.state.lastName
+        let body = 'Hello, my name is ' + this.state.firstName + ' ' + this.state.lastName + 
+                    ' and Im emailing to make an inquiry about the following project. %0D%0A' +
+                    'Project Details: ' + this.state.projectDetails + '%0D%0A' +
+                    'Project Budget: ' + this.state.budget + '%0D%0A' +
+                    'Project Deadline: ' + this.state.deadline + '%0D%0A' +
+                    'You can reply to me at: ' + this.state.emailAddress
+        window.location = `mailto:craycraftdan@gmail.com?Subject=${subject}&Body=${body}`
         this.setState({
             budget: 9500,
             deadline: 6,
@@ -87,7 +94,7 @@ class Contact extends Component {
 
     numberWithCommas = (x) => {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-      }
+    }
 
     render() {
         return(

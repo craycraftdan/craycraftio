@@ -1,30 +1,94 @@
 .about-section {
     width: 100%;
-    height: 900px;
+    height: 100%;
 	display: flex;
 	flex-wrap: wrap;
     justify-content: space-around;
     color: #EEEFF7;
     background-color: #31353D;
-	font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 }
 .about-me-container {
-	display: flex;
-    justify-content: center;
-    margin-top: 74px;
-    width: 470px;
-    height: 275px;
+    margin-top: 125px;
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-basis: 425px;
     transition: all 0.4s ease;
 }
 .skills-container {
-    margin-top: 74px;
-    height: 275px;
-    width: 470px;
+    margin-top: 125px;
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-basis: 425px;
     transition: all 0.4s ease;
+    position: relative;
 }
+.smoke {
+    background-color: rgb(99, 99, 99);
+    opacity: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    position: absolute;
+    left: 125px;
+    z-index: 0;
+    transform: translateY(-20px);
+}
+.smokeOne {
+    animation: smokingOne 3.5s ease-out infinite;
+}
+.smokeTwo {
+    left: 160px !important;
+    animation: smokingTwo 3.5s 0.5s ease-out infinite;
+}
+.smokeThree {
+    left: 185px !important;
+    animation: smokingThree 3s 0.2s ease-out infinite;
+}
+.smokeFour {
+    left: 90px !important;
+    animation: smokingFour 5s 0.2s ease-out infinite;
+}
+@keyframes smokingOne {
+    from { opacity: 0.8; transform: scale(1) translateY(-25px); }
+    to { opacity: 0.0; transform: scale(1.4) translateY(-55px); }
+}
+@keyframes smokingTwo{
+    from { opacity: 0.8; transform: scale(1) translateY(-25px); }
+    to { opacity: 0.0; transform: scale(1.6) translateY(-45px); }
+}
+@keyframes smokingThree {
+    from { opacity: 0.8; transform: scale(1) translateY(-25px); }
+    to { opacity: 0.0; transform: scale(2) translateY(-45px); }
+}
+@keyframes smokingFour {
+    from { opacity: 0.6; transform: scale(1) translateY(-25px); }
+    to { opacity: 0.0; transform: scale(2.5) translateY(-45px) translateX(15px); }
+}
+
+
+
+
 .about-me-container:hover {
 	color: #92cdcf;
 }
 .skills-container:hover {
 	color: #92cdcf;
+}
+
+.logo-container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 75px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 50px;
+    align-self: center;
 }

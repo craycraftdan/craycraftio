@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="470 0 400 312">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Coffee_Cup);
+      }
+
+      .cls-11, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #31353d;
+        stroke: #1c1d21;
+        stroke-width: 8px;
+      }
+
+      .cls-4, .cls-6, .cls-8 {
+        fill: #92cdcf;
+      }
+
+      .cls-4 {
+        font-size: 30px;
+      }
+
+      .cls-4, .cls-6, .cls-7 {
+        font-family: SegoeUI-Italic, Segoe UI;
+        font-style: italic;
+      }
+
+      .cls-5, .cls-7 {
+        fill: #eeeff7;
+      }
+
+      .cls-6 {
+        font-size: 51px;
+      }
+
+      .cls-7 {
+        font-size: 20px;
+      }
+
+      .cls-10, .cls-9 {
+        stroke: none;
+      }
+
+      .cls-10 {
+        fill: #1c1d21;
+      }
+    </style>
+    <clipPath id="clip-Coffee_Cup">
+      <rect x="470" width="400" height="312"/>
+    </clipPath>
+  </defs>
+  <g id="Coffee_Cup" data-name="Coffee Cup" class="cls-1">
+    <g id="Coffee_Cup-2" data-name="Coffee Cup" transform="translate(393.122 -18)">
+      <g id="Path_1" data-name="Path 1" class="cls-2" transform="translate(229.652 63.049)">
+        <path class="cls-9" d="M121.807,2.115c67.272,0,125.419,45.528,125.419,103.186S189.08,219.668,121.807,219.668,0,162.96,0,105.3,54.535,2.115,121.807,2.115Z"/>
+        <path class="cls-10" d="M 121.8073425292969 199.6680450439453 C 175.9946441650391 199.6680450439453 227.2262878417969 153.8077545166016 227.2262878417969 105.3016510009766 C 227.2262878417969 60.20999908447266 178.9503479003906 22.1153507232666 121.8073425292969 22.1153507232666 C 65.67059326171875 22.1153507232666 19.9999942779541 59.43255233764648 19.9999942779541 105.3016510009766 C 19.9999942779541 149.8471069335938 63.53879547119141 199.6680450439453 121.8073425292969 199.6680450439453 M 121.8073425292969 219.6680450439453 C 54.5350456237793 219.6680450439453 -6.079101694922429e-06 162.9601440429688 -6.079101694922429e-06 105.3016510009766 C -6.079101694922429e-06 47.64310073852539 54.5350456237793 2.115350723266602 121.8073425292969 2.115350723266602 C 189.0796966552734 2.115350723266602 247.2262878417969 47.64310073852539 247.2262878417969 105.3016510009766 C 247.2262878417969 162.9601440429688 189.0796966552734 219.6680450439453 121.8073425292969 219.6680450439453 Z"/>
+      </g>
+      <g id="Rectangle_4" data-name="Rectangle 4" class="cls-3" transform="translate(77 18)">
+        <rect class="cls-9" width="307.077" height="312" rx="10"/>
+        <rect class="cls-11" x="4" y="4" width="299.077" height="304" rx="6"/>
+      </g>
+    </g>
+    <g id="Group_1" data-name="Group 1" transform="translate(413 -14.558)">
+      <text id="let_skills" data-name="let skills" class="cls-4" transform="translate(84 71.405)"><tspan x="0" y="0">let </tspan><tspan class="cls-5" y="0">skills</tspan></text>
+      <text id="_" data-name="{" class="cls-6" transform="translate(233.641 76)"><tspan x="0" y="0">{</tspan></text>
+      <text id="_2" data-name="{" class="cls-6" transform="translate(103.661 265.618) rotate(180)"><tspan x="0" y="0">{</tspan></text>
+      <text id="frontEnd:_es6_js_React_Redux_backEnd:_Mongo_Express_Node_design:_AdobeXD_Photopshop_" data-name="frontEnd: 
+   [ es6, js, React, Redux ],
+backEnd: 
+  [ Mongo, Express, Node ],
+design: 
+  [ AdobeXD, Photopshop ]" class="cls-7" transform="translate(88.231 101.999)"><tspan x="0" y="0">frontEnd: </tspan><tspan x="0" y="27" xml:space="preserve">   </tspan><tspan class="cls-8" y="27">[ </tspan><tspan y="27">es6, js, React, Redux </tspan><tspan class="cls-8" y="27">]</tspan><tspan y="27">,</tspan><tspan x="0" y="54">backEnd: </tspan><tspan x="0" y="81" xml:space="preserve">  </tspan><tspan class="cls-8" y="81">[ </tspan><tspan y="81">Mongo, Express, Node </tspan><tspan class="cls-8" y="81">]</tspan><tspan y="81">,</tspan><tspan x="0" y="108">design: </tspan><tspan x="0" y="135" xml:space="preserve">  </tspan><tspan class="cls-8" y="135">[ </tspan><tspan y="135">AdobeXD, Photopshop </tspan><tspan class="cls-8" y="135">]</tspan></text>
+      <text id="_3" data-name="= " class="cls-6" transform="translate(189.95 78.155)"><tspan x="0" y="0">= </tspan></text>
+    </g>
+  </g>
+</svg>
