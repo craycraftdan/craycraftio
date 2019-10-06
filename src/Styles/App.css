@@ -1,8 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%; /*base pixel size for rem % of browser default 16px */
+}
 body {
-    background-color: #1c1d21;
-    margin: 0;
-    padding: 0;
-    border: none;
-    font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  font-size: 2rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }

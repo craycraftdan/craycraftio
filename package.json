@@ -4,12 +4,16 @@
   "private": true,
   "homepage": "https://craycraftdan.github.io/craycraftio/",
   "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-particles-js": "^2.1.0",
-    "react-scripts": "1.1.0",
-    "react-scroll": "^1.7.6",
-    "sweetalert2": "^7.7.0"
+    "disable-scroll": "^0.5.0",
+    "lodash": "^4.17.15",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-particles-js": "^2.7.0",
+    "react-scripts": "^3.1.2",
+    "react-scroll": "^1.7.14",
+    "styled-components": "^4.4.0",
+    "sweetalert2": "^8.18.0",
+    "tinycolor2": "^1.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -20,6 +24,18 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0"
+    "gh-pages": "^2.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

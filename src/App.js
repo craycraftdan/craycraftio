@@ -1,44 +1,41 @@
-import React, { Component } from 'react'
-import Particles from 'react-particles-js'
-import config from './Assets/particles.json'
-import './Styles/App.css'
-import Navigation from './Components/Navigation/index'
-import Header from './Components/Sections/Header'
-import About from './Components/Sections/About'
-import Projects from './Components/Sections/Projects'
-import Contact from './Components/Sections/Contact'
-import Footer from './Components/Sections/Footer'
+import React, { useState } from "react";
+import styled, { ThemeProvider } from "styled-components";
+import "./Styles/App.css";
+import Navigation from "./Components/Navigation";
+import Menu from "./Components/Menu";
+import { theme } from "./Styles/theme";
 
-const styles = {
-  particles: {
-    position: 'absolute',
-    width: '100vw',
-    margin: '0',
-    padding: '0',
-    height: '100vh',
-    display: 'block',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-  }
-}
+import {
+  Header,
+  About,
+  Projects,
+  Contact,
+  Footer
+} from "./Components/Sections/";
 
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: ${theme.background};
+`;
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-          <div style={{height: '100vh'}}>
-            <Navigation />
-            <Particles style={styles.particles}params={config} />
-            <Header />
-          </div>
-          <About />
-          <Projects />
-          <Contact />
-          <Footer />
-      </div>
-    );
-  }
-}
+const App = () => {
+  const [menuActive, toggleMenu] = useState(false);
+  const [accentColor, setAccentColor] = useState(theme.accentColors.primary);
+
+  return (
+    <AppContainer>
+      <ThemeProvider theme={{ ...theme, accentColor }}>
+        <Navigation active={menuActive} toggleMenu={toggleMenu} />
+        <Menu active={menuActive} toggleMenu={toggleMenu} />
+        <Header accentColor={accentColor} setAccentColor={setAccentColor} />
+        <About accentColor={accentColor} />
+        <Projects />
+        <Contact />
+        <Footer />
+      </ThemeProvider>
+    </AppContainer>
+  );
+};
 
 export default App;
