@@ -27,6 +27,10 @@ export const ColorSwitcherContainer = styled.div`
     animation-play-state: paused;
     opacity: 0.7;
   }
+
+  @media only screen and (max-width: 600px) {
+    width: ${props => (!props.active ? '130px' : '0px')};
+  }
 `;
 
 export const OptionBox = styled.div`

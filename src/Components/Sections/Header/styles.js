@@ -17,6 +17,11 @@ export const Title = styled.div`
   opacity: 0.7;
   user-select: none;
   transition: all 1.5s ${rubberBand};
+
+  @media only screen and (max-width: 600px) {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+  }
 `;
 
 export const Subtitle = styled.div`
@@ -30,12 +35,16 @@ export const Subtitle = styled.div`
   user-select: none;
   animation: ${typeIn} 2s steps(18);
   transition: all 1.5s ${rubberBand};
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+  }
 `;
 
 export const TitleBox = styled.div`
   display: flex;
   flex-direction: column;
-  width: fit-content;
   cursor: pointer;
   opacity: 0;
   animation: ${fadeIn} 1.5s 0.2s ease 1;
@@ -52,6 +61,17 @@ export const TitleBox = styled.div`
   :hover ${Subtitle} {
     letter-spacing: 0.8rem;
     opacity: 1;
+  }
+
+  @media only screen and (max-width: 600px) {
+    :hover ${Title} {
+      letter-spacing: 1.5rem;
+      opacity: 1;
+    }
+    :hover ${Subtitle} {
+      letter-spacing: 0.4rem;
+      opacity: 1;
+    }
   }
 `;
 

@@ -25,7 +25,6 @@ const Header = props => {
 
   const particleStyles = {
     position: 'fixed',
-    color: 'red',
     top: 0,
     left: 0,
     width: '100%',
