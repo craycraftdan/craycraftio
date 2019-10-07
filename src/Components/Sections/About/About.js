@@ -9,6 +9,8 @@ import React from 'react';
 // } from '../../../Assets/Images/index';
 import { AboutContainer } from './styles';
 
-const About = props => <AboutContainer id="about">About</AboutContainer>;
+const About = props => (
+  <AboutContainer id="about">Under Construction</AboutContainer>
+);
 
 export default About;

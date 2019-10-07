@@ -101,7 +101,8 @@ const Contact = props => {
 
   return (
     <ContactContainer id="contact">
-      <div className="contact-container">
+      Under Construction
+      {/* <div className="contact-container">
         <div className="header">
           <p>CONTACT ME</p>
         </div>
@@ -191,7 +192,7 @@ const Contact = props => {
             Send
           </button>
         </div>
-      </div>
+      </div> */}
     </ContactContainer>
   );
 };

@@ -3,7 +3,7 @@ import React from 'react';
 import { ProjectsContainer } from './styles';
 
 const Projects = () => (
-  <ProjectsContainer id="projects">Projects</ProjectsContainer>
+  <ProjectsContainer id="projects">Under Construction</ProjectsContainer>
 );
 
 export default Projects;
