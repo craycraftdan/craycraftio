@@ -1,16 +1,17 @@
-import styled from "styled-components";
-import { fadeIn } from "../../Styles/animations";
+import styled from 'styled-components';
+import { fadeIn } from '../../Styles/animations';
 
 export const MenuContainer = styled.div`
   background-color: ${props => props.theme.backgroundTwo};
-  width: ${props => (props.active ? "100vw" : "0px")};
-  height: ${props => (props.active ? "100vh" : "0px")};
+  width: ${props => (props.active ? '100vw' : '0px')};
+  height: ${props => (props.active ? '100vh' : '0px')};
   overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
-  font-size: 2rem;
+  z-index: 998;
+  font-size: 2.1rem;
+  font-weight: 500;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -30,7 +31,7 @@ export const MenuItem = styled.div`
   text-align: center;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   letter-spacing: 6px;
 
   :hover {

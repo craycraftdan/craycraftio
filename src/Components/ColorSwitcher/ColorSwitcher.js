@@ -1,12 +1,12 @@
-import React from "react";
-import { theme } from "../../Styles/theme";
-import { ColorSwitcherContainer, OptionBox, Option } from "./styles";
+import React from 'react';
+import { theme } from '../../Styles/theme';
+import { ColorSwitcherContainer, OptionBox, Option } from './styles';
 
 const { accentColors } = theme;
 const colors = Object.values(accentColors);
 
 const ColorSwitcher = props => (
-  <ColorSwitcherContainer>
+  <ColorSwitcherContainer active={props.active}>
     {colors.map((color, i) => (
       <OptionBox key={color}>
         <Option

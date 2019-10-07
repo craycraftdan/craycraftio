@@ -1,38 +1,53 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import tinycolor from 'tinycolor2';
 
 const barPlacement = bar => {
   switch (bar) {
-    case "two":
-      return "rotate(45deg)";
-    case "three":
-      return "translateY(-15px) rotate(-45deg)";
+    case 'two':
+      return 'rotate(45deg)';
+    case 'three':
+      return 'translateY(-11px) rotate(-45deg)';
     default:
-      return "translateY(15px) rotate(-45deg)";
+      return 'translateY(15px) rotate(-45deg)';
   }
 };
 
-export const Bar = styled.div`
-  height: 10px;
+const rgbaGenerator = (hexColor, opacity) => {
+  const { r, g, b } = tinycolor(hexColor).toRgb();
+  return `rgba(${r}, ${g}, ${b}, ${opacity})`;
+};
+
+export const NavContainer = styled.div`
   width: 100%;
+  height: 60px;
+  padding: 0px 20px 0px 15px;
+  background-color: ${props =>
+    props.active
+      ? 'transparent'
+      : rgbaGenerator(props.theme.background, props.opacity)};
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const Bar = styled.div`
+  height: 6px;
+  width: 40px;
   background-color: ${props => props.theme.accentColor};
   border-radius: 2px;
   transform: ${props =>
-    props.active ? barPlacement(props.bar) : "rotate(0deg)"};
-  opacity: ${props => (props.bar === "one" && props.active ? 0 : 1)};
+    props.active ? barPlacement(props.bar) : 'rotate(0deg)'};
+  opacity: ${props => (props.bar === 'one' && props.active ? 0 : 1)};
   transition: all 0.6s ease-in-out;
 `;
 
-export const NavContainer = styled.div`
-  width: 50px;
-  height: 43px;
-  background-color: transparent;
-  position: fixed;
-  z-index: 999;
-  right: 15px;
-  top: 15px;
+export const Nav = styled.div`
   cursor: pointer;
   opacity: 0.7;
-  z-index: 1000;
   transition: all 0.5s ease-in-out;
 
   :hover {
@@ -44,14 +59,3 @@ export const NavContainer = styled.div`
     margin-top: 5px;
   }
 `;
-
-// export const ActiveBar = styled.div`
-//   height: 10px;
-//   margin-top: 6px;
-//   width: 100%;
-//   background-color: ${props => props.theme.accentColor};
-//   border-radius: 2px;
-//   transform: ${props => barPlacement(props.bar)};
-//   opacity: 1;
-//   transition: all 0.4s ease-in-out;
-// `;

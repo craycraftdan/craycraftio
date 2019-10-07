@@ -1,16 +1,16 @@
-import React from "react";
-import { scroller } from "react-scroll";
-import { MenuContainer, MenuItem } from "./styles";
+import React from 'react';
+import { scroller } from 'react-scroll';
+import { MenuContainer, MenuItem } from './styles';
 
 const Menu = props => {
-  const sections = ["about", "projects", "contact"];
+  const sections = ['about', 'projects', 'contact'];
 
   const scrollTo = section => {
     props.toggleMenu();
     scroller.scrollTo(section, {
       duration: 900,
       delay: 0,
-      smooth: "easeInOutQuart"
+      smooth: 'easeInOutQuart',
     });
   };
 
