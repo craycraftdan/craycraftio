@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "560cbf8284faea15c5e286dfd0bf08bf",
+    "revision": "e6b92dc5e942c2c59f6355f39c191903",
     "url": "/craycraftio/index.html"
   },
   {
