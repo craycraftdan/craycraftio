@@ -17,7 +17,12 @@ const Menu = props => {
   return (
     <MenuContainer active={props.active}>
       {sections.map(section => (
-        <MenuItem key={section} onClick={() => scrollTo(section)}>
+        <MenuItem
+          key={section}
+          active={props.active}
+          offSide={section === 'projects' ? '-100vw' : '100vw'}
+          onClick={() => scrollTo(section)}
+        >
           {section.toUpperCase()}
         </MenuItem>
       ))}

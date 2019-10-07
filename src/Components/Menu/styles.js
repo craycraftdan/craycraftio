@@ -2,16 +2,15 @@ import styled from 'styled-components';
 import { fadeIn } from '../../Styles/animations';
 
 export const MenuContainer = styled.div`
-  background-color: ${props => props.theme.backgroundTwo};
-  width: ${props => (props.active ? '100vw' : '0px')};
-  height: ${props => (props.active ? '100vh' : '0px')};
+  width: 100%;
+  height: 100%;
+  visibility: ${props => (props.active ? null : 'hidden')};
   overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 998;
-  font-size: 2.1rem;
-  font-weight: 500;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -22,17 +21,20 @@ export const MenuContainer = styled.div`
 `;
 
 export const MenuItem = styled.div`
-  color: #eeeff7;
-  height: 33%;
+  background-color: ${props => props.theme.backgroundTwo};
+  color: ${props => props.theme.white};
+  height: 33.5%;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  transition: all 0.4s ease-in-out;
   cursor: pointer;
   font-family: 'Roboto Mono', monospace;
   letter-spacing: 6px;
+  transform: ${props =>
+    props.active ? 'translateX(0px)' : `translateX(${props.offSide})`};
+  transition: all 0.4s ease-in-out;
 
   :hover {
     background-color: ${props => props.theme.background};

@@ -1,4 +1,4 @@
-import { keyframes } from "styled-components";
+import { keyframes } from 'styled-components';
 
 export const bounce = keyframes`
     0%,
@@ -46,5 +46,14 @@ export const pop = keyframes`
   }
   100% {
     transform: translateY(0px);
+  }
+`;
+
+export const slideIn = keyframes`
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0px);
   }
 `;

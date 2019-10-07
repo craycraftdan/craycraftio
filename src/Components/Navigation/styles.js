@@ -49,6 +49,7 @@ export const Nav = styled.div`
   cursor: pointer;
   opacity: 0.7;
   transition: all 0.5s ease-in-out;
+  padding: 5px;
 
   :hover {
     opacity: 1;
