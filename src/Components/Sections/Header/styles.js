@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { rubberBand } from "../../../Styles/transitions";
-import { bounce, typeIn, fadeIn } from "../../../Styles/animations";
+import styled from 'styled-components';
+import { rubberBand } from '../../../Styles/transitions';
+import { bounce, typeIn, fadeIn } from '../../../Styles/animations';
 
 export const HeaderContainer = styled.div`
   width: 100%;
@@ -15,6 +15,7 @@ export const Title = styled.div`
   font-weight: 500;
   letter-spacing: 2rem;
   opacity: 0.7;
+  user-select: none;
   transition: all 1.5s ${rubberBand};
 `;
 
@@ -26,6 +27,7 @@ export const Subtitle = styled.div`
   padding-left: 1rem;
   overflow: hidden;
   white-space: nowrap;
+  user-select: none;
   animation: ${typeIn} 2s steps(18);
   transition: all 1.5s ${rubberBand};
 `;
@@ -74,8 +76,8 @@ export const ChevSide = styled.div`
   background-color: #eeeff7;
   transform: ${props =>
     props.leftSide
-      ? "rotate(45deg) translateX(9px) translateY(12px)"
-      : "rotate(-45deg) translateX(12px) translateY(18px)"};
+      ? 'rotate(45deg) translateX(9px) translateY(12px)'
+      : 'rotate(-45deg) translateX(12px) translateY(18px)'};
   transition: all 0.4s ease-in-out;
 `;
 
