@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/craycraftio/precache-manifest.647b64e56b2e3a7db0fb77c88f408da0.js"
+  "/craycraftio/precache-manifest.56eb06f25cdd87481280a6c3ee7c51cd.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e6b92dc5e942c2c59f6355f39c191903",
+    "revision": "083491b67a2f208afa0f10a22e12dc07",
     "url": "/craycraftio/index.html"
   },
   {
-    "revision": "76e619f8d014cbff5dfd",
+    "revision": "ea9fabf60909c07b74ce",
     "url": "/craycraftio/static/css/main.fa4cf0a7.chunk.css"
   },
   {
-    "revision": "9538a93418a22941359a",
-    "url": "/craycraftio/static/js/2.d1cff874.chunk.js"
+    "revision": "df70472fd0cfe544ba1a",
+    "url": "/craycraftio/static/js/2.e4360635.chunk.js"
   },
   {
-    "revision": "76e619f8d014cbff5dfd",
-    "url": "/craycraftio/static/js/main.bca3436c.chunk.js"
+    "revision": "ea9fabf60909c07b74ce",
+    "url": "/craycraftio/static/js/main.f0f625e3.chunk.js"
   },
   {
     "revision": "e357f706baf2d3c9f8b5",

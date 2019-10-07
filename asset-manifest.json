@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/craycraftio/static/css/main.fa4cf0a7.chunk.css",
-    "main.js": "/craycraftio/static/js/main.bca3436c.chunk.js",
-    "main.js.map": "/craycraftio/static/js/main.bca3436c.chunk.js.map",
+    "main.js": "/craycraftio/static/js/main.f0f625e3.chunk.js",
+    "main.js.map": "/craycraftio/static/js/main.f0f625e3.chunk.js.map",
     "runtime-main.js": "/craycraftio/static/js/runtime-main.7063249c.js",
     "runtime-main.js.map": "/craycraftio/static/js/runtime-main.7063249c.js.map",
-    "static/js/2.d1cff874.chunk.js": "/craycraftio/static/js/2.d1cff874.chunk.js",
-    "static/js/2.d1cff874.chunk.js.map": "/craycraftio/static/js/2.d1cff874.chunk.js.map",
+    "static/js/2.e4360635.chunk.js": "/craycraftio/static/js/2.e4360635.chunk.js",
+    "static/js/2.e4360635.chunk.js.map": "/craycraftio/static/js/2.e4360635.chunk.js.map",
     "index.html": "/craycraftio/index.html",
-    "precache-manifest.647b64e56b2e3a7db0fb77c88f408da0.js": "/craycraftio/precache-manifest.647b64e56b2e3a7db0fb77c88f408da0.js",
+    "precache-manifest.56eb06f25cdd87481280a6c3ee7c51cd.js": "/craycraftio/precache-manifest.56eb06f25cdd87481280a6c3ee7c51cd.js",
     "service-worker.js": "/craycraftio/service-worker.js",
     "static/css/main.fa4cf0a7.chunk.css.map": "/craycraftio/static/css/main.fa4cf0a7.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.7063249c.js",
-    "static/js/2.d1cff874.chunk.js",
+    "static/js/2.e4360635.chunk.js",
     "static/css/main.fa4cf0a7.chunk.css",
-    "static/js/main.bca3436c.chunk.js"
+    "static/js/main.f0f625e3.chunk.js"
   ]
 }
