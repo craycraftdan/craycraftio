@@ -1,11 +1,21 @@
 {
-  "main.css": "static/css/main.cdd52ef0.css",
-  "main.css.map": "static/css/main.cdd52ef0.css.map",
-  "main.js": "static/js/main.54dc1b8c.js",
-  "main.js.map": "static/js/main.54dc1b8c.js.map",
-  "static\\media\\Browser Window.svg": "static/media/Browser Window.60a98d3a.svg",
-  "static\\media\\Coffee Cup.svg": "static/media/Coffee Cup.c540dfb2.svg",
-  "static\\media\\MongoLogo.png": "static/media/MongoLogo.3851cc04.png",
-  "static\\media\\ReactLogo.png": "static/media/ReactLogo.61a7eeee.png",
-  "static\\media\\ReduxLogo.png": "static/media/ReduxLogo.59c46753.png"
+  "files": {
+    "main.css": "/craycraftio/static/css/main.fa4cf0a7.chunk.css",
+    "main.js": "/craycraftio/static/js/main.7a84db17.chunk.js",
+    "main.js.map": "/craycraftio/static/js/main.7a84db17.chunk.js.map",
+    "runtime-main.js": "/craycraftio/static/js/runtime-main.7063249c.js",
+    "runtime-main.js.map": "/craycraftio/static/js/runtime-main.7063249c.js.map",
+    "static/js/2.d1cff874.chunk.js": "/craycraftio/static/js/2.d1cff874.chunk.js",
+    "static/js/2.d1cff874.chunk.js.map": "/craycraftio/static/js/2.d1cff874.chunk.js.map",
+    "index.html": "/craycraftio/index.html",
+    "precache-manifest.c8f6fdf7bec2ba753e5c2c50be329d1f.js": "/craycraftio/precache-manifest.c8f6fdf7bec2ba753e5c2c50be329d1f.js",
+    "service-worker.js": "/craycraftio/service-worker.js",
+    "static/css/main.fa4cf0a7.chunk.css.map": "/craycraftio/static/css/main.fa4cf0a7.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7063249c.js",
+    "static/js/2.d1cff874.chunk.js",
+    "static/css/main.fa4cf0a7.chunk.css",
+    "static/js/main.7a84db17.chunk.js"
+  ]
 }
